@@ -1,0 +1,114 @@
+.main_grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+.main_header{
+	background-image: url(images/header_back.jpg);
+}
+
+.about_header{
+	background-image: url(images/about_header_back.jpg);
+}
+
+.contact_header{
+	background-image: url(images/contacts_header_back.jpg);
+}
+
+.shop_header {
+	background-image: url(images/shop_header_back.jpg);
+}
+
+.header1{
+    height: 100vh;
+}
+
+.header2{
+    height: 60vh;
+}
+
+
+header{
+    grid-column:1/5;
+    background-size: cover;
+}
+
+
+.back{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+header nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li{
+    padding: 1em 2em;
+
+}
+
+
+nav a {
+    height: 100%;
+}
+
+
+nav a .logo{
+    height: 100%;
+}
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color: white;
+
+}
+
+
+.button {
+    background-color: orange;
+    padding: 15px 20px;
+    color: black;
+    border-radius: 25px;
+}
+
+
+.banner h1{
+    font-size: 50px;
+}
+
+
+.banner p{
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    padding: 30px;
+}
+
+.menu li a:hover{
+    color: orange;
+    transition: 0.9s;
+}
+
+
+.button:hover{
+    background-color: #8c6900;
+    transition: 0.9s;
+}

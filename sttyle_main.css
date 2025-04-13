@@ -1,0 +1,77 @@
+main{
+    grid-column: 2/4;
+}
+
+
+.clothes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    
+}
+
+.tiles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+
+.item {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-columns: 1;
+    overflow: hidden;
+}
+
+
+.item img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+
+.item .item_overlay{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.item:hover .item_img{
+    transform:scale(1.15) ;
+    transition: 0.5s;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/-1;
+    height: 250px;
+    color: white;
+
+}
+
+.cocial_contacts {
+    display: flex;
+    width: 10vw;
+    justify-content: space-around;
+}
+
+footer p {
+    padding: 20px 0;
+}
